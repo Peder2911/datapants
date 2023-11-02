@@ -1,0 +1,4 @@
+*.py[cod]
+dist/
+.pants.d/
+.pids

@@ -1,0 +1,15 @@
+[GLOBAL]
+pants_version = "2.17.0"
+pythonpath=["%(buildroot)s/pants-plugins"]
+backend_packages = [
+   "pants.backend.python",
+   "pants.backend.plugin_development",
+   "datapants",
+]
+[python]
+enable_resolves = true
+interpreter_constraints = ["==3.9.*"]
+
+[python.resolves]
+pants-plugins = "pants-plugins/pants-plugins.lock"
+python-default = "3rdparty/python/python-default.lock"
